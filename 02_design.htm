@@ -11,8 +11,8 @@ xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 14">
 <meta name=Originator content="Microsoft Word 14">
-<link rel=File-List href="02_design_files/filelist.xml">
-<link rel=Edit-Time-Data href="02_design_files/editdata.mso">
+<link rel=File-List href="filelist.xml">
+<link rel=Edit-Time-Data href="editdata.mso">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -40,7 +40,7 @@ w\:* {behavior:url(#default#VML);}
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=themeData href="02_design_files/themedata.xml">
+<link rel=themeData href="themedata.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:Zoom>77</w:Zoom>
@@ -465,7 +465,7 @@ table.MsoNormalTable
 style='font-family:"Times New Roman";color:black'>2. HIGH-LEVEL DESIGN<o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='margin-bottom:6.0pt;line-height:200%'><span
-style='font-family:"Times New Roman";color:black'>The iPal’s primary starting
+style='font-family:"Times New Roman";color:black'>The iPal√ïs primary starting
 point will be its <i>Speech Processing Module</i> (Section 2.1). Upon input, it
 will parse the command structure. It then sends the command to the <i
 style='mso-bidi-font-style:normal'>Security Module</i> (Section 2.5) to verify
@@ -476,13 +476,13 @@ necessary control flow, selecting one of two possible paths: <o:p></o:p></span><
  <li class=MsoNormal style='color:black;margin-top:12.0pt;margin-bottom:6.0pt;
      line-height:200%;mso-list:l0 level1 lfo1;tab-stops:list .5in;vertical-align:
      baseline'><span style='font-family:"Times New Roman"'>If keywords
-     pertaining to “Amazon” or “Google Home” are detected, the iPal will
+     pertaining to √íAmazon√ì or √íGoogle Home√ì are detected, the iPal will
      activate its <i>Machine-Learning</i> (Section 2.3) and <i>Interoperability</i>
      (Section 2.4) modules.<o:p></o:p></span></li>
  <li class=MsoNormal style='color:black;margin-top:12.0pt;margin-bottom:6.0pt;
      line-height:200%;mso-list:l0 level1 lfo1;tab-stops:list .5in;vertical-align:
      baseline'><span style='font-family:"Times New Roman"'>If not, the command
-     will be handled directly by the Speech Processing Module’s <i>Siri Web
+     will be handled directly by the Speech Processing Module√ïs <i>Siri Web
      Services</i> <i>Interface</i> (Section 2.2). <o:p></o:p></span></li>
 </ol>
 
@@ -552,13 +552,13 @@ shown below in Figure 1: <o:p></o:p></span></p>
  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
 style='mso-ignore:vglayout' clear=ALL>
 <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:200%;
-font-family:"Times New Roman";color:black'>Figure 1: the iPal’s overall design
+font-family:"Times New Roman";color:black'>Figure 1: the iPal√ïs overall design
 hierarchy</span><span style='font-family:Times;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 6.0pt;margin-left:0in;line-height:200%'><span style='font-family:"Times New Roman";
 color:black'>Figure 2 presents a high-level data flow diagram of how an example
-command would be processed by each of the iPal’s modules, as well as the
+command would be processed by each of the iPal√ïs modules, as well as the
 requirements fulfilled at each step:<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -589,13 +589,13 @@ requirements fulfilled at each step:<o:p></o:p></span></p>
  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
 style='mso-ignore:vglayout' clear=ALL>
 <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:200%;
-font-family:"Times New Roman";color:black'>Figure 2: the iPal’s overall high-level
+font-family:"Times New Roman";color:black'>Figure 2: the iPal√ïs overall high-level
 data flow<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 6.0pt;margin-left:0in;line-height:200%'><span style='font-family:Times;
 mso-bidi-font-family:"Times New Roman"'>We discuss the functionality of each of
-the iPal’s core modules in the remainder of Section 2. </span><span
+the iPal√ïs core modules in the remainder of Section 2. </span><span
 style='font-family:"Times New Roman";color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -634,20 +634,20 @@ Processing Module is displayed in Figure 3:<o:p></o:p></span></p>
  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
 style='mso-ignore:vglayout' clear=ALL>
 <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:200%;
-font-family:"Times New Roman";color:black'>Figure 3: an overview of the iPal’s
+font-family:"Times New Roman";color:black'>Figure 3: an overview of the iPal√ïs
 Speech Processing Module<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 6.0pt;margin-left:0in;line-height:200%'><span style='font-family:"Courier New";
 color:red'>SpeechProcessor</span><span style='font-family:"Times New Roman";
-color:black'> primarily acts as the module’s command-and-control, coordinating
+color:black'> primarily acts as the module√ïs command-and-control, coordinating
 the exchange of data between classes through the sending and receiving of event
 triggers. It will additionally communicate the resulting answers to the user. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 6.0pt;margin-left:0in;line-height:200%'><span class=SpellE><span
 style='font-family:"Courier New";color:red'>WordListener</span></span><span
-style='font-family:"Times New Roman";color:black'> employs Apple’s Siri API to
+style='font-family:"Times New Roman";color:black'> employs Apple√ïs Siri API to
 identify keywords from a given input command. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -702,9 +702,9 @@ style='font-family:"Times New Roman";color:black;mso-bidi-font-weight:bold'>Doma
 style='font-family:"Times New Roman";color:black;mso-bidi-font-weight:bold'>
 represent command categories that Siri Web Services can make sense of: audio,
 messaging, and payments. <i style='mso-bidi-font-style:normal'>Intents</i> map vocabulary
-to specific application actions. For example, if a user issues the command “Hey
-Siri, message Jill. I’m running late”, Siri would launch iMessage (the domain),
-and craft the message for Jill (the intent) after finding her in the user’s
+to specific application actions. For example, if a user issues the command √íHey
+Siri, message Jill. I√ïm running late√ì, Siri would launch iMessage (the domain),
+and craft the message for Jill (the intent) after finding her in the user√ïs
 contact list. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -714,7 +714,7 @@ Domain 1: VoIP Calling</span></i><span style='font-family:"Times New Roman";
 color:black;mso-bidi-font-weight:bold'> &#8211; The user will be able to
 initiate VoIP phone conversations using Siri-enabled applications. For example,
 Skype offers Siri integration, so placing a phone call with a person listed in
-the Skype’s contact list would be a supported operation. <o:p></o:p></span></p>
+the Skype√ïs contact list would be a supported operation. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 6.0pt;margin-left:.5in;line-height:200%'><i style='mso-bidi-font-style:normal'><span
@@ -731,7 +731,7 @@ Domain 3: Payments</span></i><span style='font-family:"Times New Roman";
 color:black;mso-bidi-font-weight:bold'> &#8211; Users will be able to send
 payments to other contacts through supported payment apps. If a user would like
 to send money to a friend or business, they could make use of the following
-command: “Hey Siri- Paypal John twenty dollars.” The iPal will surpass
+command: √íHey Siri- Paypal John twenty dollars.√ì The iPal will surpass
 competing payment-supporting platforms making because of its robust security
 measures employing two-factor authentication and precise access control.<o:p></o:p></span></p>
 
@@ -740,7 +740,7 @@ measures employing two-factor authentication and precise access control.<o:p></o
 color:black'>2.3 Machine-Learning Module<o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='margin-bottom:6.0pt;line-height:200%'><span
-style='font-family:"Times New Roman";color:black'>The iPal’s Machine-Learning
+style='font-family:"Times New Roman";color:black'>The iPal√ïs Machine-Learning
 module, shown in Figure 4 below, fulfills requirement R-7 from our requirements
 summary:</span><span style='mso-no-proof:yes'> <o:p></o:p></span></p>
 
@@ -772,7 +772,7 @@ summary:</span><span style='mso-no-proof:yes'> <o:p></o:p></span></p>
  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
 style='mso-ignore:vglayout' clear=ALL>
 <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:200%;
-font-family:"Times New Roman";color:black'>Figure 4: view of the iPal’s
+font-family:"Times New Roman";color:black'>Figure 4: view of the iPal√ïs
 Machine-Learning Module</span><span style='font-size:10.0pt;line-height:200%;
 font-family:Times;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:
 "Times New Roman"'><o:p></o:p></span></p>
@@ -780,7 +780,7 @@ font-family:Times;mso-fareast-font-family:"Times New Roman";mso-bidi-font-family
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
 6.0pt;margin-left:0in;line-height:200%'><span style='font-family:"Courier New";
 color:red'>MachineLearning</span><span style='font-family:"Times New Roman";
-color:black'> acts as the module’s coordinator. Additionally, it provides the
+color:black'> acts as the module√ïs coordinator. Additionally, it provides the
 interface enabling data flow to and from the other modules. </span><span
 style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:200%;font-family:
 "Times New Roman";color:black'><o:p></o:p></span></p>
@@ -799,10 +799,10 @@ style='font-family:"Times New Roman";color:black'>. <o:p></o:p></span></p>
 6.0pt;margin-left:0in;line-height:200%'><span style='font-family:"Times New Roman";
 color:black'>When a new inquiry is sent from the Speech Processing Module, the </span><span
 style='font-family:"Courier New";color:red'>MachineLearning</span><span
-style='font-family:"Times New Roman";color:black'> class’s method </span><span
+style='font-family:"Times New Roman";color:black'> class√ïs method </span><span
 style='font-family:"Courier New";color:red'>predictAnswer()</span><span
 style='font-family:"Times New Roman";color:black'>is invoked, which then calls
-each algorithm’s </span><span style='font-family:"Courier New";color:red'>train()</span><span
+each algorithm√ïs </span><span style='font-family:"Courier New";color:red'>train()</span><span
 style='font-family:"Times New Roman";color:black'> and </span><span
 style='font-family:"Courier New";color:red'>predict()</span><span
 style='font-family:"Times New Roman";color:black'> methods.<span
@@ -862,7 +862,7 @@ Times;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-bottom:6.0pt;line-height:200%'><span
 style='font-family:Times;mso-bidi-font-family:"Times New Roman"'>The
-Interoperability Module’s diagram is displayed in Figure 5, along with the
+Interoperability Module√ïs diagram is displayed in Figure 5, along with the
 requirements it satisfies:<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -893,7 +893,7 @@ requirements it satisfies:<o:p></o:p></span></p>
  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
 style='mso-ignore:vglayout' clear=ALL>
 <span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;line-height:200%;
-font-family:"Times New Roman";color:black'>Figure 5: diagram of the iPal’s Interoperability
+font-family:"Times New Roman";color:black'>Figure 5: diagram of the iPal√ïs Interoperability
 Module<o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
@@ -1103,7 +1103,7 @@ module satisfies requirements R-2 through R-5:<o:p></o:p></span></p>
  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
 style='mso-ignore:vglayout' clear=ALL>
 <span style='font-size:11.0pt;line-height:200%;font-family:"Times New Roman";
-color:black'>Figure 6: the iPal’s Security Module</span><span style='font-family:
+color:black'>Figure 6: the iPal√ïs Security Module</span><span style='font-family:
 "Times New Roman";color:black'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
